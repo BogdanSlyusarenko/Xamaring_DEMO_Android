@@ -32,11 +32,6 @@ steps:
     overWrite: true
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(build.artifactStagingDirectory)' 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: $(build.artifactStagingDirectory)' 
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-
-  
