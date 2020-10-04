@@ -32,6 +32,6 @@ steps:
     overWrite: true
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(build.artifactStagingDirectory)/bin/Debug/' 
+    pathtoPublish: '$(build.artifactStagingDirectory)/Bogdan_Xamarin_Android/bin/Debug' 
     artifactName: 'drop' 
     publishLocation: 'Container'
