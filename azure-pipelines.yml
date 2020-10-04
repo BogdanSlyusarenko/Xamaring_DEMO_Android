@@ -32,6 +32,6 @@ steps:
     overWrite: true
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(build.artifactStagingDirectory)/output/$(sdk)/$(configuration)' 
+    pathtoPublish: '$(build.artifactStagingDirectory)/bit/Debug/' 
     artifactName: 'drop' 
     publishLocation: 'Container'
