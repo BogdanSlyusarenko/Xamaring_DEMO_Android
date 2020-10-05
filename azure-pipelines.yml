@@ -25,11 +25,6 @@ steps:
     projectFile: '**/*droid*.csproj'
     outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
-- task: CopyFiles@2
-  inputs:
-    contents: '**/*.apk'
-    targetFolder: '$(build.artifactStagingDirectory)'
-    overWrite: true
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
